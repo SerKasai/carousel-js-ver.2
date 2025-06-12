@@ -1,0 +1,56 @@
+body {
+  background-color: white;
+}
+
+.container-slider {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.slide .cr_item {
+  display: none;
+  height: 100%;
+}
+
+.cr_item.cr_active {
+  display: block;
+}
+
+.cr_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cr_arrows_top {
+  cursor: pointer;
+  position: absolute;
+  left: 55%;
+  top: 10px;
+}
+
+.cr_arrows_bottom {
+  cursor: pointer;
+  position: absolute;
+  left: 55%;
+  bottom: 10px;
+}
+
+.item_g {
+  width: 125%;
+}
+
+.cr_arrows_top i, .cr_arrows_bottom i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.cr_arrows_top:hover i, .cr_arrows_bottom:hover i {
+  color: rgba(255, 255, 255, 1);
+}
