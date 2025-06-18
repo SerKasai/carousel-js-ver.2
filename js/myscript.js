@@ -34,7 +34,7 @@ const itemsRef = document.getElementsByClassName('items')[0];
 const thumbsRef = document.getElementsByClassName('thumbs')[0];
 let item = '';
 let thumb = '';
-let active = 1;
+let active = 0;
 
 // for (let i = 0; i < slides.length; i++) {
 
