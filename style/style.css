@@ -9,9 +9,10 @@ body {
 }
 
 .container {
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
-  min-height: 100vh;
   align-items: center;
 }
 
@@ -80,8 +81,8 @@ img {
 }
 
 .items {
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 80%;
   display: flex;
 }
 
@@ -89,15 +90,16 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  align-items: center;
 }
 
 .thumb {
   filter: brightness(0.1);
+  cursor: pointer;
 }
 
 .thumb img {
-  max-width: 208px;
+  max-width: 113px;
 }
 
 .thumb.active {
@@ -111,4 +113,19 @@ img {
 
 .cr_arrows_top:hover i, .cr_arrows_bottom:hover i {
   color: rgba(255, 255, 255, 1);
+}
+
+.prev {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.next {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
 }
